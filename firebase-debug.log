@@ -1,0 +1,32 @@
+[debug] [2022-03-28T05:09:59.135Z] ----------------------------------------------------------------------
+[debug] [2022-03-28T05:09:59.137Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Antelope Cai\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve --only hosting
+[debug] [2022-03-28T05:09:59.137Z] CLI Version:   10.5.0
+[debug] [2022-03-28T05:09:59.137Z] Platform:      win32
+[debug] [2022-03-28T05:09:59.137Z] Node Version:  v16.14.2
+[debug] [2022-03-28T05:09:59.138Z] Time:          Mon Mar 28 2022 01:09:59 GMT-0400 (北美东部夏令时间)
+[debug] [2022-03-28T05:09:59.138Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-03-28T05:09:59.185Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-03-28T05:09:59.186Z] > authorizing via signed-in user (caiyinan56@gmail.com)
+[debug] [2022-03-28T05:09:59.186Z] [iam] checking project friendlychat-a88f3 for permissions ["firebase.projects.get"]
+[debug] [2022-03-28T05:09:59.187Z] > refreshing access token with scopes: []
+[debug] [2022-03-28T05:09:59.187Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-03-28T05:09:59.321Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Mon, 28 Mar 2022 05:09:58 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-03-28T05:09:59.331Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlychat-a88f3:testIamPermissions [none]
+[debug] [2022-03-28T05:09:59.331Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlychat-a88f3:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-03-28T05:09:59.451Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlychat-a88f3:testIamPermissions 200
+[debug] [2022-03-28T05:09:59.451Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlychat-a88f3:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-03-28T05:09:59.452Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/friendlychat-a88f3 [none]
+[debug] [2022-03-28T05:09:59.720Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/friendlychat-a88f3 200
+[debug] [2022-03-28T05:09:59.721Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/friendlychat-a88f3 {"projectId":"friendlychat-a88f3","projectNumber":"604781333985","displayName":"FriendlyChat","name":"projects/friendlychat-a88f3","resources":{"hostingSite":"friendlychat-a88f3","realtimeDatabaseInstance":"friendlychat-a88f3-default-rtdb","storageBucket":"friendlychat-a88f3.appspot.com","locationId":"us-east4"},"state":"ACTIVE"}
+[debug] [2022-03-28T05:09:59.721Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/friendlychat-a88f3/sites 
+[debug] [2022-03-28T05:10:00.308Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/friendlychat-a88f3/sites 200
+[debug] [2022-03-28T05:10:00.308Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/friendlychat-a88f3/sites {"sites":[{"name":"projects/604781333985/sites/friendlychat-a88f3","defaultUrl":"https://friendlychat-a88f3.web.app","appId":"1:604781333985:web:777f8a3375cf092d44d6a0","type":"DEFAULT_SITE"}]}
+[debug] [2022-03-28T05:10:00.309Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/friendlychat-a88f3/webApps/1:604781333985:web:777f8a3375cf092d44d6a0/config [none]
+[debug] [2022-03-28T05:10:00.714Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/friendlychat-a88f3/webApps/1:604781333985:web:777f8a3375cf092d44d6a0/config 200
+[debug] [2022-03-28T05:10:00.714Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/friendlychat-a88f3/webApps/1:604781333985:web:777f8a3375cf092d44d6a0/config {"projectId":"friendlychat-a88f3","appId":"1:604781333985:web:777f8a3375cf092d44d6a0","databaseURL":"https://friendlychat-a88f3-default-rtdb.firebaseio.com","storageBucket":"friendlychat-a88f3.appspot.com","locationId":"us-east4","apiKey":"AIzaSyAl4Bt2JHo8fsLlAPA1QMaqO8IbyDuOaU4","authDomain":"friendlychat-a88f3.firebaseapp.com","messagingSenderId":"604781333985","measurementId":"G-62CZH5F3QF"}
+[info] i  hosting: Serving hosting files from: ./public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1m./public\u001b[22m"}}
+[info] +  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: 127.0.0.1 - - [28/Mar/2022:05:10:13 +0000] "GET /scripts/main.js HTTP/1.1" 200 4267546 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [28/Mar/2022:05:10:13 +0000] \"GET /scripts/main.js HTTP/1.1\" 200 4267546 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [28/Mar/2022:05:10:14 +0000] "GET /firebase-messaging-sw.js HTTP/1.1" 200 616080 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [28/Mar/2022:05:10:14 +0000] \"GET /firebase-messaging-sw.js HTTP/1.1\" 200 616080 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36\""}}
