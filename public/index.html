@@ -122,8 +122,6 @@
           <div>
             <h3>KC Checklist</h3>
             <p>Please check the mark if you think your tutee does not master the knowledge</p>
-
-
             <div class="accordion" id="accordionExample">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
@@ -135,7 +133,8 @@
                     aria-expanded="true"
                     aria-controls="collapseOne"
                   >
-                    Accordion Item #1
+                  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" disabled="true">
+                  &nbsp;Recall the simple interest formula
                   </button>
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-mdb-parent="#accordionExample">
@@ -148,7 +147,10 @@
                     <strong>Resource: </strong> <a href="https://demilii.github.io/TOL_project1/simple%20interest.html">Simple Interest</a> <br>
                     <br>
 
-
+                    <div class="flex-button">
+                    <button type="button" class="btn btn-danger btn-rounded KC-check" style="position: center">Not Mastered</button>
+                    <button type="button" class="btn btn-success btn-rounded KC-check" style="position: center">Mastered</button>
+                    </div> 
                   </div>
                 </div>
               </div>
@@ -206,7 +208,13 @@
           </div>
         </section>
         <section class="mdl-tabs__panel" id="tab-2">
-          <div class="page-content">Tab 2
+          <div class="page-content">
+            <div class="question">
+            <h3>Missing KC</h3>
+            <p>Calculate the compound interest rate</p>
+            </div>
+
+            <div class
           </div>
         </section>
         <section class="mdl-tabs__panel" id="tab-3">
