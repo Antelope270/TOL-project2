@@ -444,4 +444,13 @@ document.addEventListener('DOMContentLoaded', function(){
     document.getElementsByClassName('mdl-tabs__panel')[index].classList.add('is-show');
   };
 }, false);
- 
+
+
+function nextquestion(){
+  const x=document.getElementById("step2-task");
+  x.innerHTML="Task 2: Suppose you deposit $3,000 at 12% per year compounded per month. How much will be paid from your account after 8 months? ";
+ }
+
+function nextpage(){
+  
+ }
