@@ -17,16 +17,45 @@
 html, body {
   font-family: 'Roboto', 'Helvetica', sans-serif;
 }
+
+.mdl-layout-content{
+  display: flex;
+  flex-direction: column;
+}
+
+#script {
+  height:100%;
+  margin-top: 1rem;
+}
+
+section{
+  width: 100%;
+  height: 100%;
+}
+
+.scroller {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  scrollbar-color: rebeccapurple green;
+  scrollbar-width: thin;
+}
+
 main, #messages-card {
   height: 100%;
   padding-bottom: 0;
 }
+
 #messages-card-container {
   height: calc(100% - 35px);
   padding-bottom: 0;
+  /* display: flex;
+  flex-direction: column; */
 }
+
+
 #messages-card {
-  margin-top: 15px;
+  margin-top: 1rem;
 }
 .mdl-layout__header-row span {
   margin-left: 15px;
