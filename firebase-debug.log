@@ -193,3 +193,38 @@
     at processTicksAndRejections (internal/process/task_queues.js:97:5)
 [error] 
 [error] Error: Failed to get Firebase project friendlychat-a88f3. Please make sure the project exists and your account has permission to access it.
+[debug] [2022-03-29T19:33:48.118Z] ----------------------------------------------------------------------
+[debug] [2022-03-29T19:33:48.121Z] Command:       /usr/local/bin/firebase /Users/a111/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase serve --only hosting
+[debug] [2022-03-29T19:33:48.122Z] CLI Version:   10.5.0
+[debug] [2022-03-29T19:33:48.122Z] Platform:      darwin
+[debug] [2022-03-29T19:33:48.122Z] Node Version:  v12.18.1
+[debug] [2022-03-29T19:33:48.132Z] Time:          Tue Mar 29 2022 15:33:48 GMT-0400 (Eastern Daylight Time)
+[debug] [2022-03-29T19:33:48.133Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-03-29T19:33:48.136Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-03-29T19:33:48.250Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-03-29T19:33:48.250Z] > authorizing via signed-in user (qianruzzz@gmail.com)
+[debug] [2022-03-29T19:33:48.250Z] [iam] checking project friendlychat-a88f3 for permissions ["firebase.projects.get"]
+[debug] [2022-03-29T19:33:48.250Z] > refreshing access token with scopes: []
+[debug] [2022-03-29T19:33:48.251Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-03-29T19:33:48.411Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Tue, 29 Mar 2022 19:33:48 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-03-29T19:33:48.463Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlychat-a88f3:testIamPermissions [none]
+[debug] [2022-03-29T19:33:48.463Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlychat-a88f3:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-03-29T19:33:48.470Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2022-03-29T19:33:48.470Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2022-03-29T19:33:48.788Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlychat-a88f3:testIamPermissions 200
+[debug] [2022-03-29T19:33:48.788Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlychat-a88f3:testIamPermissions {}
+[debug] [2022-03-29T19:33:48.789Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project friendlychat-a88f3:
+
+  firebase.projects.get
+[debug] [2022-03-29T19:33:48.791Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/friendlychat-a88f3 [none]
+[debug] [2022-03-29T19:33:49.218Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/friendlychat-a88f3 403
+[debug] [2022-03-29T19:33:49.218Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/friendlychat-a88f3 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-03-29T19:33:49.219Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-03-29T19:33:49.361Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (/Users/a111/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/responseToError.js:47:12)
+    at RetryOperation._fn (/Users/a111/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/apiv2.js:286:39)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[error] 
+[error] Error: Failed to get Firebase project friendlychat-a88f3. Please make sure the project exists and your account has permission to access it.

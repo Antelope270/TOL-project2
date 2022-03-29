@@ -132,6 +132,7 @@
                     data-mdb-target="#collapseOne"
                     aria-expanded="true"
                     aria-controls="collapseOne"
+                    id ="accordion-button1"
                   >
                   <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" disabled="true">
                   &nbsp;Recall the simple interest formula
@@ -148,8 +149,8 @@
                     <br>
 
                     <div class="flex-button">
-                    <button type="button" class="btn btn-danger btn-rounded KC-check" style="position: center">Not Mastered</button>
-                    <button type="button" class="btn btn-success btn-rounded KC-check" style="position: center">Mastered</button>
+                    <button type="button" class="btn btn-danger btn-rounded KC-check" id="KC1-wrong">Not Mastered</button>
+                    <button type="button" class="btn btn-success btn-rounded KC-check" id="KC1-right">Mastered</button>
                     </div> 
                   </div>
                 </div>
@@ -163,6 +164,7 @@
                     data-mdb-target="#collapseTwo"
                     aria-expanded="false"
                     aria-controls="collapseTwo"
+                    id ="accordion-button2"
                   >
                     Accordion Item #2
                   </button>
@@ -214,12 +216,15 @@
             <p id="step2-task">Task 1: Suppose you deposit $3,000 at 12% per year compounded per month. How much will be paid from your account after 8 months? </p>
             </div>
           <div class="flex-button">
-              <button type="button" class="btn btn-danger btn-rounded KC-check" onclick="nextquestion()">Not Mastered</button>
-              <button type="button" class="btn btn-success btn-rounded KC-check" onclick="nextpage()">Mastered</button>
+              <button type="button" class="btn btn-danger btn-rounded KC-check" id="task1-notmastered">Not Mastered</button>
+              <button type="button" class="btn btn-success btn-rounded KC-check" >Mastered</button>
           </div>
         </section>
         <section class="mdl-tabs__panel" id="tab-3">
-          <div class="page-content">Tab 3</div>
+          <div class="page-content">
+            <h1>Congratulations! End of Session!</h1>
+            <p>Please provide feedback to your tutee!</p>
+          </div>
         </section>
 
       </div>
@@ -262,5 +267,6 @@
 
 <!-- This script is created by webpack -->
 <script type="module" src="scripts/main.js"></script>
+<!-- <script src="../index.js"></script> -->
 </body>
 </html>

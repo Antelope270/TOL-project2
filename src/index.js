@@ -445,12 +445,22 @@ document.addEventListener('DOMContentLoaded', function(){
   };
 }, false);
 
+//change KC
+document.getElementById("KC1-wrong").addEventListener('click',function(){
+  document.getElementById("collapseOne").classList.remove('show');
+  document.getElementById("accordion-button1").classList.add('collapsed');
+  document.getElementById("collapseTwo").classList.add('show');
+  document.getElementById("accordion-button2").classList.remove('collapsed');
+});
 
-function nextquestion(){
+//change practice task
+document.getElementById("task1-notmastered").addEventListener('click',function(){
   const x=document.getElementById("step2-task");
   x.innerHTML="Task 2: Suppose you deposit $3,000 at 12% per year compounded per month. How much will be paid from your account after 8 months? ";
- }
+ });
 
-function nextpage(){
+//go to step 3
+// document.getElementById("task1-notmastered").addEventListener('click',function(){
+
+// });
   
- }
