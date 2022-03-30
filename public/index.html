@@ -107,12 +107,12 @@
       <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
         
         <div class="mdl-tabs__tab-bar">
-          <a href="#tab-1" class="mdl-tabs__tab is-active">Assessment</a>
-          <a href="#tab-2" class="mdl-tabs__tab">Practice</a>
-          <a href="#tab-3" class="mdl-tabs__tab">Feedback</a>
+          <a href="#tab-1" class="mdl-tabs__tab is-active" id="tab-1-link">Assessment</a>
+          <a href="#tab-2" class="mdl-tabs__tab" id="tab-2-link">Practice</a>
+          <a href="#tab-3" class="mdl-tabs__tab" id="tab-3-link">Feedback</a>
         </div>
 
-        <section class="mdl-tabs__panel is-show" id="tab-1">
+        <section class="mdl-tabs__panel is-active" id="tab-1">
           <div class="question">
             <h3>Question</h3>
             <p>You invest $500 at 6% simple interest for one year. Ivy invests $500 at a rate of 6% compounded monthly for one year. Who will earn more after one year?</p>
@@ -134,7 +134,7 @@
                     aria-controls="collapseOne"
                     id ="accordion-button1"
                   >
-                  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" disabled="true">
+                  <input type="checkbox" id="KC1-checkbox" name="KC1-checkbox" value="KC" disabled="true">
                   &nbsp;Recall the simple interest formula
                   </button>
                 </h2>
@@ -149,8 +149,8 @@
                     <br>
 
                     <div class="flex-button">
-                    <button type="button" class="btn btn-danger btn-rounded KC-check" id="KC1-wrong">Not Mastered</button>
-                    <button type="button" class="btn btn-success btn-rounded KC-check" id="KC1-right">Mastered</button>
+                    <button type="button" class="btn btn-danger btn-rounded" id="KC1-wrong" onclick="wrong_toKC2()">Not Mastered</button>
+                    <button type="button" class="btn btn-success btn-rounded" id="KC1-right" onclick="correct_toKC2()">Mastered</button>
                     </div> 
                   </div>
                 </div>
@@ -166,18 +166,24 @@
                     aria-controls="collapseTwo"
                     id ="accordion-button2"
                   >
-                    Accordion Item #2
+                    <input type="checkbox" id="KC2-checkbox" name="KC2-checkbox" value="KC" disabled="true">
+                  &nbsp;Calculate the simple interest principal amount
                   </button>
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-mdb-parent="#accordionExample">
                   <div class="accordion-body">
-                    <strong>This is the second item's accordion body.</strong> It is hidden by
-                    default, until the collapse plugin adds the appropriate classes that we use to
-                    style each element. These classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any of this with custom CSS
-                    or overriding our default variables. It's also worth noting that just about any
-                    HTML can go within the <strong>.accordion-body</strong>, though the transition
-                    does limit overflow.
+                    <strong>Calculate the simple interest principal amount</strong> <br>
+                    <strong>Guidance: </strong> Ask the tutee to recall the simple interest formula <br>
+                    <br>
+                    <strong>Suggested answer: </strong> You could simplify the task by separating the definitions between simple interest and compound interest. For example, you could say, calculating the simple interest needsthree parameters, which are principal, simple interest rates and time, ask your tutee to explain the terms in his/her own words. <br>
+                    <br>
+                    <strong>Resource: </strong> <a href="https://demilii.github.io/TOL_project1/simple%20interest.html">Simple Interest</a> <br>
+                    <br>
+
+                    <div class="flex-button">
+                    <button type="button" class="btn btn-danger btn-rounded" id="KC2-wrong" onclick="wrong_toKC3()">Not Mastered</button>
+                    <button type="button" class="btn btn-success btn-rounded" id="KC2-right" onclick="correct_toKC3()">Mastered</button>
+                    </div> 
                   </div>
                 </div>
               </div>
@@ -190,34 +196,147 @@
                     data-mdb-target="#collapseThree"
                     aria-expanded="false"
                     aria-controls="collapseThree"
+                    id ="accordion-button3"
                   >
-                    Accordion Item #3
+                    <input type="checkbox" id="KC3-checkbox" name="KC3-checkbox" value="KC" disabled="true">
+                  &nbsp;Calculate the compound interest rate
                   </button>
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-mdb-parent="#accordionExample">
                   <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
-                    until the collapse plugin adds the appropriate classes that we use to style each
-                    element. These classes control the overall appearance, as well as the showing and
-                    hiding via CSS transitions. You can modify any of this with custom CSS or
-                    overriding our default variables. It's also worth noting that just about any HTML
-                    can go within the <strong>.accordion-body</strong>, though the transition does
-                    limit overflow.
+                    <strong>Calculate the simple interest principal amount</strong> <br>
+                    <strong>Guidance: </strong> Ask the tutee to recall the simple interest formula <br>
+                    <br>
+                    <strong>Suggested answer: </strong> You could simplify the task by separating the definitions between simple interest and compound interest. For example, you could say, calculating the simple interest needsthree parameters, which are principal, simple interest rates and time, ask your tutee to explain the terms in his/her own words. <br>
+                    <br>
+                    <strong>Resource: </strong> <a href="https://demilii.github.io/TOL_project1/simple%20interest.html">Simple Interest</a> <br>
+                    <br>
+
+                    <div class="flex-button">
+                    <button type="button" class="btn btn-danger btn-rounded" id="KC3-wrong" onclick="wrong_toKC4()">Not Mastered</button>
+                    <button type="button" class="btn btn-success btn-rounded" id="KC3-right" onclick="correct_toKC4()">Mastered</button>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-mdb-toggle="collapse"
+                    data-mdb-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                    id ="accordion-button4"
+                  >
+                    <input type="checkbox" id="KC4-checkbox" name="KC4-checkbox" value="KC" disabled="true">
+                  &nbsp;Recall the compound interest formula
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-mdb-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Recall the compound interest formula</strong> <br>
+                    <strong>Guidance: </strong> Ask the tutee to recall the simple interest formula <br>
+                    <br>
+                    <strong>Suggested answer: </strong> You could simplify the task by separating the definitions between simple interest and compound interest. For example, you could say, calculating the simple interest needsthree parameters, which are principal, simple interest rates and time, ask your tutee to explain the terms in his/her own words. <br>
+                    <br>
+                    <strong>Resource: </strong> <a href="https://demilii.github.io/TOL_project1/simple%20interest.html">Simple Interest</a> <br>
+                    <br>
+
+                    <div class="flex-button">
+                    <button type="button" class="btn btn-danger btn-rounded" id="KC4-wrong" onclick="wrong_toKC5()">Not Mastered</button>
+                    <button type="button" class="btn btn-success btn-rounded" id="KC4-right" onclick="correct_toKC5()">Mastered</button>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-mdb-toggle="collapse"
+                    data-mdb-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                    id ="accordion-button5"
+                  >
+                    <input type="checkbox" id="KC5-checkbox" name="KC5-checkbox" value="KC" disabled="true">
+                  &nbsp;Calculate the principal amount
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-mdb-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Calculate the principal amount</strong> <br>
+                    <strong>Guidance: </strong> Ask the tutee to recall the simple interest formula <br>
+                    <br>
+                    <strong>Suggested answer: </strong> You could simplify the task by separating the definitions between simple interest and compound interest. For example, you could say, calculating the simple interest needsthree parameters, which are principal, simple interest rates and time, ask your tutee to explain the terms in his/her own words. <br>
+                    <br>
+                    <strong>Resource: </strong> <a href="https://demilii.github.io/TOL_project1/simple%20interest.html">Simple Interest</a> <br>
+                    <br>
+
+                    <div class="flex-button">
+                    <button type="button" class="btn btn-danger btn-rounded" id="KC5-wrong" onclick="wrong_toKC6()">Not Mastered</button>
+                    <button type="button" class="btn btn-success btn-rounded" id="KC5-right" onclick="correct_toKC6()">Mastered</button>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-mdb-toggle="collapse"
+                    data-mdb-target="#collapseSix"
+                    aria-expanded="false"
+                    aria-controls="collapseSix"
+                    id ="accordion-button6"
+                  >
+                    <input type="checkbox" id="KC6-checkbox" name="KC6-checkbox" value="KC" disabled="true">
+                  &nbsp;Distinguish the simple with the compound interest
+                  </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-mdb-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Distinguish the simple with the compound interest</strong> <br>
+                    <strong>Guidance: </strong> Ask the tutee to recall the simple interest formula <br>
+                    <br>
+                    <strong>Suggested answer: </strong> You could simplify the task by separating the definitions between simple interest and compound interest. For example, you could say, calculating the simple interest needsthree parameters, which are principal, simple interest rates and time, ask your tutee to explain the terms in his/her own words. <br>
+                    <br>
+                    <strong>Resource: </strong> <a href="https://demilii.github.io/TOL_project1/simple%20interest.html">Simple Interest</a> <br>
+                    <br>
+
+                    <div class="flex-button">
+                    <button type="button" class="btn btn-danger btn-rounded" id="KC6-wrong" onclick="KC6_wrong()">Not Mastered</button>
+                    <button type="button" class="btn btn-success btn-rounded" id="KC6-right" onclick="KC6_correct()">Mastered</button>
+                    </div> 
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+
+          <div class="flex-button">
+            <button type="button" class="btn btn-warning btn-rounded KC-check" id="step1-finish" onclick="to_tab2()" style="display: none">Finish</button>
           </div>
         </section>
         <section class="mdl-tabs__panel" id="tab-2">
           <div class="page-content">
             <div class="question">
             <h3>Missing KC</h3>
-            <p id="step2-task">Task 1: Suppose you deposit $3,000 at 12% per year compounded per month. How much will be paid from your account after 8 months? </p>
+            <div id="step2-task1">
+            <p >Task 1: Suppose you deposit $3,000 at 12% per year compounded per month. How much will be paid from your account after 8 months? </p>
+            </div>
+            <div id="step2-task2" style="display: none">
+            <p >Task 2: this is task two </p>
+            </div>
+
             </div>
           <div class="flex-button">
-              <button type="button" class="btn btn-danger btn-rounded KC-check" id="task1-notmastered">Not Mastered</button>
-              <button type="button" class="btn btn-success btn-rounded KC-check" >Mastered</button>
+              <button type="button" class="btn btn-danger btn-rounded KC-check" id="task1-notmastered" onclick="to_task2()">Not Mastered</button>
+              <button type="button" class="btn btn-success btn-rounded KC-check" onclick="to_tab3()">Mastered</button>
           </div>
         </section>
         <section class="mdl-tabs__panel" id="tab-3">
@@ -267,6 +386,122 @@
 
 <!-- This script is created by webpack -->
 <script type="module" src="scripts/main.js"></script>
-<!-- <script src="../index.js"></script> -->
+<script type="text/javascript">
+  function correct_toKC2(){
+  document.getElementById("collapseOne").classList.remove('show');
+  document.getElementById("accordion-button1").classList.add('collapsed');
+  document.getElementById("KC1-checkbox").checked = false;
+  document.getElementById("collapseTwo").classList.add('show');
+  document.getElementById("accordion-button2").classList.remove('collapsed');
+}
+
+  function wrong_toKC2(){
+  document.getElementById("collapseOne").classList.remove('show');
+  document.getElementById("accordion-button1").classList.add('collapsed');
+  document.getElementById("KC1-checkbox").checked = true;
+  document.getElementById("collapseTwo").classList.add('show');
+  document.getElementById("accordion-button2").classList.remove('collapsed');
+}
+
+  function correct_toKC3(){
+    document.getElementById("collapseTwo").classList.remove('show');
+    document.getElementById("accordion-button2").classList.add('collapsed');
+    document.getElementById("KC2-checkbox").checked = false;
+    document.getElementById("collapseThree").classList.add('show');
+    document.getElementById("accordion-button3").classList.remove('collapsed');
+  }
+
+    function wrong_toKC3(){
+    document.getElementById("collapseTwo").classList.remove('show');
+    document.getElementById("accordion-button2").classList.add('collapsed');
+    document.getElementById("KC2-checkbox").checked = true;
+    document.getElementById("collapseThree").classList.add('show');
+    document.getElementById("accordion-button3").classList.remove('collapsed');
+  }
+
+  function correct_toKC4(){
+    document.getElementById("collapseThree").classList.remove('show');
+    document.getElementById("accordion-button3").classList.add('collapsed');
+    document.getElementById("KC3-checkbox").checked = false;
+    document.getElementById("collapseFour").classList.add('show');
+    document.getElementById("accordion-button4").classList.remove('collapsed');
+  }
+
+    function wrong_toKC4(){
+    document.getElementById("collapseThree").classList.remove('show');
+    document.getElementById("accordion-button3").classList.add('collapsed');
+    document.getElementById("KC3-checkbox").checked = true;
+    document.getElementById("collapseFour").classList.add('show');
+    document.getElementById("accordion-button4").classList.remove('collapsed');
+  }
+
+  function correct_toKC5(){
+    document.getElementById("collapseFour").classList.remove('show');
+    document.getElementById("accordion-button4").classList.add('collapsed');
+    document.getElementById("KC4-checkbox").checked = false;
+    document.getElementById("collapseFive").classList.add('show');
+    document.getElementById("accordion-button5").classList.remove('collapsed');
+  }
+
+    function wrong_toKC5(){
+    document.getElementById("collapseFour").classList.remove('show');
+    document.getElementById("accordion-button4").classList.add('collapsed');
+    document.getElementById("KC4-checkbox").checked = true;
+    document.getElementById("collapseFive").classList.add('show');
+    document.getElementById("accordion-button5").classList.remove('collapsed');
+  }
+
+  function correct_toKC6(){
+    document.getElementById("collapseFive").classList.remove('show');
+    document.getElementById("accordion-button5").classList.add('collapsed');
+    document.getElementById("KC5-checkbox").checked = false;
+    document.getElementById("collapseSix").classList.add('show');
+    document.getElementById("accordion-button6").classList.remove('collapsed');
+  }
+
+    function wrong_toKC6(){
+    document.getElementById("collapseFive").classList.remove('show');
+    document.getElementById("accordion-button5").classList.add('collapsed');
+    document.getElementById("KC5-checkbox").checked = true;
+    document.getElementById("collapseSix").classList.add('show');
+    document.getElementById("accordion-button6").classList.remove('collapsed');
+  }
+
+  function KC6_wrong(){
+    document.getElementById("collapseSix").classList.remove('show');
+    document.getElementById("accordion-button6").classList.add('collapsed');
+    document.getElementById("KC6-checkbox").checked = false;
+    document.getElementById("step1-finish").style.display= "block";
+  }
+
+    function KC6_correct(){
+    document.getElementById("collapseSix").classList.remove('show');
+    document.getElementById("accordion-button6").classList.add('collapsed');
+    document.getElementById("KC6-checkbox").checked = true;
+    document.getElementById("step1-finish").style.display= "block";
+  }
+
+function to_task2(){
+  document.getElementById("step2-task1").style.display= "none";
+  document.getElementById("step2-task2").style.display= "block";
+ }
+
+function to_tab2(){
+  document.getElementById("tab-1-link").classList.remove('is-active');
+  document.getElementById("tab-1").classList.remove('is-active');
+  document.getElementById("tab-2-link").classList.add('is-active');
+  document.getElementById("tab-2").classList.add('is-active');
+ }
+
+function to_tab3(){
+  document.getElementById("tab-2-link").classList.remove('is-active');
+  document.getElementById("tab-2").classList.remove('is-active');
+  document.getElementById("tab-3-link").classList.add('is-active');
+  document.getElementById("tab-3").classList.add('is-active');
+ }
+
+
+</script>
+
 </body>
 </html>
