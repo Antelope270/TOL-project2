@@ -17,7 +17,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="Learn how to use the Firebase platform on the Web">
   <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width"/>
-  <title>Alice's Wonderland Peer Support </title>
+  <title>Alice's Wonderland Peer Support</title>
 
   <!-- Disable tap highlight on IE -->
   <meta name="msapplication-tap-highlight" content="no">
@@ -100,7 +100,7 @@
 
   <!-- identity selection -->
   <div id="identity">
-    <div class="dropdown " style="margin-left:16.5%">
+    <div class="dropdown" style="margin-left:16.5%;">
       <a
         class="btn mdl-button--raised dropdown-toggle mdl-color--pink-400"
         href="#"
@@ -108,7 +108,7 @@
         id="dropdownMenuLink"
         data-mdb-toggle="dropdown"
         aria-expanded="false"
-        style="color:white;"
+        style="color:white"
       >
         Select your role
       </a>
@@ -123,7 +123,7 @@
   <!-- instructions -->
   <main class="mdl-layout__content mdl-color--grey-100">
     <div id="messages-card-container" class="mdl-cell mdl-cell--12-col mdl-grid">
-      <div id="script" class=" mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--6-col-tablet mdl-cell--6-col-desktop ">
+      <div id="script" class=" mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--6-col-tablet mdl-cell--6-col-desktop">
     <section>
       <div class="scroller"> 
       <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
@@ -143,7 +143,7 @@
           </div>
 
 
-          <div>
+          <!-- <div>
             <div style="margin: 2rem 2rem 0 2rem" >
             <h5>KC Checklist</h5>
             <p style="margin: 0">Please check the mark if you think your tutee does not master the knowledge</p>
@@ -342,7 +342,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <div class="flex-button">
             <button type="button" class="btn btn-warning btn-rounded KC-check" id="step1-finish" onclick="to_tab2()" style="display: none">Finish</button>
@@ -362,11 +362,14 @@
                 <h5>Task 1</h5>
                 <p>Suppose you deposit $3,000 at 12% per year compounded per month. How much will be paid from your account after 8 months? </p>
               </div>
-              <div id="answer1">
+              <!-- <div id="answer1">
                 <h5>Suggested answer</h5>
                 <p>Interest rate per year “r” is 12%, compounded times per year “m” is 12; As a result, the interest rates i = r / m = 12% / 12 = 1%. Combined with the Initial principal “p” is 3000, we can calculate the principal amount A(n) = P(1 + i )^ n = 3000 (1+1%)^ 8 = 3248.5 </p>
-              </div>
+              </div> -->
+
+
             </div>
+
 
             <div id="step2-task2" style="display: none">
               <div id="question2">
@@ -379,15 +382,15 @@
             </div>
 
             </div>
-          <div class="flex-button">
+          <!-- <div class="flex-button">
               <button type="button" class="btn btn-danger btn-rounded KC-check" id="task1-notmastered" onclick="to_task2()">Not Mastered</button>
               <button type="button" class="btn btn-success btn-rounded KC-check" onclick="to_tab3()">Mastered</button>
-          </div>
+          </div> -->
         </section>
         <section class="mdl-tabs__panel" id="tab-3">
           <div class="page-content" style="margin:4rem">
             <h3>Congratulations! End of Session!</h3>
-            <p>Please provide feedback to your tutee!</p>
+            <p>Please provide feedback to your tutor!</p>
           </div>
         </section>
 
@@ -396,19 +399,23 @@
       </div>
     </section>  
   </div>
-      <!-- Messages container -->
-    
-      <div id="messages-card" class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--6-col-tablet mdl-cell--6-col-desktop">
-        <!-- hint card -->
-        <div class="card" style="margin:1rem;">
-          <div class="card-body" style="background-color: rgb(255, 237, 215);">
-            <h5 class="card-title">Hint</h5>
-            <p class="card-text">Click the request button for some hints when you need!</p>
-            <button type="button" class="btn btn-warning" style="margin:0;">Request</button>
-          </div>
-        </div>
+      <!-- right panel -->
+      <!-- hint box & button -->
+      <div id="hint">
 
-        <!-- message thread -->
+      </div>
+      <!-- Messages container -->
+      <div id="messages-card" class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--6-col-tablet mdl-cell--6-col-desktop">
+          <!-- hint card -->
+          <div class="card" class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet mdl-cell--6-col-desktop" style="margin:1rem;">
+            <div class="card-body" style="background-color: rgb(255, 237, 215);">
+              <h5 class="card-title">Hint</h5>
+              <p class="card-text">Click the request button for some hints when you need!</p>
+              <button type="button" class="btn btn-warning" style="margin:0;">Request</button>
+            </div>
+          </div>
+  
+          <!-- message thread -->
         <div class="mdl-card__supporting-text mdl-color-text--grey-600">
           <div id="messages">
           </div>
