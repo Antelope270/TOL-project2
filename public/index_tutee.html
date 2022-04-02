@@ -83,7 +83,28 @@
   <header class="mdl-layout__header mdl-color-text--white mdl-color--pink-200">
     <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid">
       <div class="mdl-layout__header-row mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
-        <h3><i class="material-icons">chat_bubble_outline</i> Alice's Wonderland Peer Support</h3>
+        <h3><i class="material-icons">face</i> Alice's Wonderland Peer Support</h3>
+         <!-- identity selection -->
+      <div id="identity">
+        <div class="dropdown " style="margin-left:16.5%; z-index: 1;">
+      <a
+        class="btn mdl-button--raised dropdown-toggle mdl-color--pink-400"
+        href="#"
+        role="button"
+        id="dropdownMenuLink"
+        data-mdb-toggle="dropdown"
+        aria-expanded="false"
+        style="margin-left:25rem; color:white; border-radius: 10rem;"
+        
+      >
+        Select your role
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <li><a class="dropdown-item" href="index.html">Tutor</a></li>
+        <li><a class="dropdown-item" href="index_tutee.html">Tutee</a></li>
+      </ul>
+        </div>
+     </div>
       </div>
       <div id="user-container">
         <div hidden id="user-pic"></div>
@@ -97,28 +118,6 @@
       </div>
     </div>
   </header>
-
-  <!-- identity selection -->
-  <div id="identity">
-    <div class="dropdown" style="margin-left:16.5%;">
-      <a
-        class="btn mdl-button--raised dropdown-toggle mdl-color--pink-400"
-        href="#"
-        role="button"
-        id="dropdownMenuLink"
-        data-mdb-toggle="dropdown"
-        aria-expanded="false"
-        style="color:white"
-      >
-        Select your role
-      </a>
-    
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-        <li><a class="dropdown-item" href="index.html">Tutor</a></li>
-        <li><a class="dropdown-item" href="index_tutee.html">Tutee</a></li>
-      </ul>
-    </div>
-  </div>
 
   <!-- instructions -->
   <main class="mdl-layout__content mdl-color--grey-100">
@@ -370,7 +369,6 @@
 
             </div>
 
-
             <div id="step2-task2" style="display: none">
               <div id="question2">
                 <h5>Task 2</h5>
@@ -399,19 +397,14 @@
       </div>
     </section>  
   </div>
-      <!-- right panel -->
-      <!-- hint box & button -->
-      <div id="hint">
-
-      </div>
+     
       <!-- Messages container -->
       <div id="messages-card" class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--6-col-tablet mdl-cell--6-col-desktop">
           <!-- hint card -->
           <div class="card" class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet mdl-cell--6-col-desktop" style="margin:1rem;">
             <div class="card-body" style="background-color: rgb(255, 237, 215);">
               <h5 class="card-title">Hint</h5>
-              <p class="card-text">Click the request button for some hints when you need!</p>
-              <button type="button" class="btn btn-warning" style="margin:0;">Request</button>
+              <p class="card-text">Please answer the tutor's question as detailed as you can. If you have any questions please ask your tutor!</p>
             </div>
           </div>
   
